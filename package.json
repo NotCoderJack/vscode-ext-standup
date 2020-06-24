@@ -2,7 +2,7 @@
 	"name": "standup",
 	"displayName": "Hi, Stand Up!",
 	"description": "Remind you to stand up prevent sedentary",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "logo.png",
 	"engines": {
 		"vscode": "^1.46.0"
