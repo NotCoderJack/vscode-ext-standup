@@ -2,13 +2,16 @@
 	"name": "standup",
 	"displayName": "Hi, Stand Up!",
 	"description": "Remind you to stand up prevent sedentary",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"repository": {},
+	"publisher": "notcoderjack",
+	"license": "MIT",
 	"activationEvents": [
 		"onStartupFinished"
 	],
