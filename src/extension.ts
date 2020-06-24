@@ -10,19 +10,16 @@ const REMIND_OPTIONS = ['15mins', '1hour', 'No more today']
 const jobRemind = () => {
 	vscode.window.showWarningMessage(REMIND_MSG, {
 	}, ...REMIND_OPTIONS).then((selected) => {
-		if (selected === REMIND_OPTIONS[4]) {
-			clearAllJobs()
-		}
 		switch (selected) {
 			case REMIND_OPTIONS[0]:
 				Schedule.rescheduleJob(allJobs[0], genCron(15))
-				break;
+				break
 			case REMIND_OPTIONS[1]:
 				Schedule.rescheduleJob(allJobs[0], genCron(60))
-				break;
+				break
 			case REMIND_OPTIONS[2]:
-				Schedule.rescheduleJob(allJobs[0], genCron(120))
-				break;
+				Schedule.rescheduleJob(allJobs[0], genCron(60 * (24 - new Date().getHours())))
+				break
 		}
 	})
 }

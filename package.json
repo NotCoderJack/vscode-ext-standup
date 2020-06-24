@@ -3,13 +3,17 @@
 	"displayName": "Hi, Stand Up!",
 	"description": "Remind you to stand up prevent sedentary",
 	"version": "1.0.0",
+	"icon": "logo.png",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
 	"categories": [
 		"Other"
 	],
-	"repository": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NotCoderJack/vscode-ext-standup"
+	},
 	"publisher": "notcoderjack",
 	"license": "MIT",
 	"activationEvents": [
